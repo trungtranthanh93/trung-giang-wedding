@@ -75,7 +75,7 @@ function CalendarCard() {
             <b>
               [Tiệc nhà gái]{' '}
               <a>
-                16 giờ, Thứ bảy ngày 05/04/2025 Tại Nhà văn hoá thôn Văn Ổ, xã
+                16 giờ, Thứ bảy ngày 05/04/2025 Tại Tư gia. Nhà văn hoá thôn Văn Ổ, xã
                 Đại Đồng, Huyện Văn Lâm, Hưng Yên
               </a>
             </b>
