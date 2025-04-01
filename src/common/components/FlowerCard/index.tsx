@@ -1,44 +1,70 @@
-import * as CS from 'src/common/components/Styles';
-import * as S from './Styles';
+import * as CS from "src/common/components/Styles";
+import PhoneIcon from "@mui/icons-material/Phone";
+import { color } from "src/common/utils/styles";
+import CircleIcon from "../CircleIcon";
 
 function FlowerCard() {
   return (
     <CS.CommonContainer>
-      <CS.HorizontalBar />
+      <CS.CommonMargin margin="30px" />
       <CS.CommonBody>
-        <CS.MainImg
-          src="/images/barunson/tit_remittance_fla.png"
-          alt="Love, love, love"
-        />
-        <S.FlowerCardBody>
-          <a href="https://www.barunsonflower.com/?barunid=301069">
-            <S.FlowerCardTextContainer>
-              <CS.CommonTable>
-                <tbody>
-                  <tr>
-                    <S.FlowerCardTd>
-                      <S.FlowerCardP>신랑, 신부님께</S.FlowerCardP>
-                      <S.FlowerCardP>축하의 마음을 전해보세요</S.FlowerCardP>
-                      <S.FlowerCardPBold>
-                        <b>화환 선물하기 ►</b>
-                      </S.FlowerCardPBold>
-                    </S.FlowerCardTd>
-                    <td>
-                      <S.FlowerCardImageContainer>
-                        <CS.MainImg
-                          src="/images/barunson/flowers_img_v2.png"
-                          alt="Love, love, love"
-                        />
-                      </S.FlowerCardImageContainer>
-                    </td>
-                  </tr>
-                </tbody>
-              </CS.CommonTable>
-            </S.FlowerCardTextContainer>
-          </a>
-        </S.FlowerCardBody>
+        <CS.CommonTextContainer>
+          <CS.CommonTable>
+            <tbody>
+              <tr>
+                <td>
+                  <CS.CommonSubSubTitle>Liên hệ chú rể</CS.CommonSubSubTitle>
+                </td>
+                <td style={{ padding: "0px 0px 0px 20px" }}>
+                  <a href="tel:0386639018">
+                    <CircleIcon Icon={PhoneIcon} color={color.groomColor} />
+                  </a>
+                </td>
+                <td style={{ padding: "0px 0px 0px 10px" }}>
+                  <a
+                    href="https://zalo.me/0386639018"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <CS.MainImg src="/images/zalo/zalo-nam-30.svg" alt="zalo" />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <CS.CommonSubSubTitle>Liên hệ cô dâu</CS.CommonSubSubTitle>
+                </td>
+                <td style={{ padding: "0px 0px 0px 20px" }}>
+                  <a href="tel:087-9999-321">
+                    <CircleIcon Icon={PhoneIcon} color={color.brideColor} />
+                  </a>
+                </td>
+                <td style={{ padding: "0px 0px 0px 10px" }}>
+                  <a
+                    href="https://zalo.me/0879999321"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <CS.MainImg src="/images/zalo/zalo-nu-30.svg" alt="zalo" />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </CS.CommonTable>
+        </CS.CommonTextContainer>
+        <CS.CommonMargin margin="50px" />
+        <CS.CommonSubTitle>Chúc mừng</CS.CommonSubTitle>
+        <CS.CommonTextContainer>
+          <CS.CommonSubSubTitle>Mừng chú rể</CS.CommonSubSubTitle>
+        </CS.CommonTextContainer>
+        <CS.MainImg src="/images/qr/QR_chu_re.jpg" alt="Love, love, love" />
+        <CS.CommonMargin margin="40px" />
+        <CS.CommonTextContainer>
+          <CS.CommonSubSubTitle>Mừng cô dâu</CS.CommonSubSubTitle>
+        </CS.CommonTextContainer>
+        <CS.MainImg src="/images/qr/QR_co_dau.jpg" alt="Love, love, love" />
       </CS.CommonBody>
-      <CS.CommonMargin margin="50px" />
+      <CS.CommonMargin margin="40px" />
     </CS.CommonContainer>
   );
 }
