@@ -38,7 +38,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>230408 인환 ❤ 채윤</title>
+          <title>06042025 Thành Trung ❤ Phan Giang</title>
           <Script
             async
             strategy="beforeInteractive"
